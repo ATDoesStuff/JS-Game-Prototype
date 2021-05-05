@@ -1,0 +1,120 @@
+/* GLOBAL ELEMENTS */
+:root{
+    --titleIDK: #ffffff;
+    --backgroundHead: #d39f58;
+    --headText: #101010;
+    --backgroundMain: #ffffff;
+    --tempbackground: #142f85;
+    --bgLog: #9a9a9a;
+
+}@font-face {
+    font-family: dogicaPixel;
+    src: url(dogicapixel.ttf);
+    font-weight: 400;
+}html{
+    font-size: 62.5%;
+}body{
+    font-size: 16px;
+    height: 80%;
+    margin-bottom: 0;
+    background-color: var(--tempbackground);
+    font-family: dogicaPixel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: var(--backgroundHead);
+    padding: 1rem 3rem;
+    position: fixed;
+    right: 0px;
+    bottom: auto;
+    top: 0px;
+    left: 0px;
+}header h1, header a{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--headText);
+}header a:hover{
+    text-decoration: underline;
+}#navmenu {
+    float: right;
+    margin-top: 1rem;
+}#logo{
+    float: left;
+}
+
+/* GENERAL ATRIBUTES */
+main{
+    margin:57px 52px 0;
+    background-color: var(--backgroundMain);
+}footer{
+    background-color: var(--backgroundHead);
+    margin: 0;
+    padding: 2rem 3rem;
+}footer p{
+    font-size: 1rem;
+    margin: 0;
+}
+.farm{
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 2fr 1.75fr;
+}
+
+/* LOG */
+.consoleLog{
+    margin: 1.5rem;
+    margin-left: 3rem;
+    width: 250px;
+}#log{
+    background-color: var(--bgLog);
+    height: 450px;
+    margin-bottom: 1rem;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}#logUserInput{
+    width: 80%;
+}#logTrigger{
+    padding: 2px 1rem;
+    border: 1px solid black;
+}.logEntry{
+    padding: 0 0 0 1rem;   
+    font-size: 12px;
+}.commandText{ color:darkred; }
+
+/* GRID FARM */
+#game{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    border: 0.25vmin solid black;
+}.farmLand{
+    margin: auto;
+    width: 80vmin;
+    height: 80vmin;
+    background-color: green;
+}
+
+/* CROPS */
+.watered{
+    filter: brightness(50%);
+}
+.seed1{
+    background-color: brown;
+}
+.seed2{
+    background-color: yellow;
+}
+.seed3{
+    background-color: purple;
+}
+
+/* STATS AND SHOP */
+.statShop{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}

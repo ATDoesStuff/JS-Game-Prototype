@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <link rel="icon" href="res/favicon.ico">
+
+    <title>Log Game</title>
+</head>
+<body>
+    <header>
+
+        <div id="navbar">
+            <div id="logo"><h1>Plantas vs Plantas</h1></div>
+            <nav id="navmenu">
+                <a href="https://github.com/ATDoesStuff/">GitHub</a>
+                <a href="#">Changelog (Coming Soon!)</a>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+
+        <section class="farm">
+            <div class="consoleLog">
+                <div id="log">
+                    <p class="logEntry">Type /plant to start planting some crops! You can also type /help to check out all the comands avaliable!</p>
+                </div>
+                <input autofocus type="text" id="logUserInput" placeholder="plant seed 3, 2">
+                <button id="logTrigger" onclick="logListener()">></button>
+            </div>
+            <div class="farmLand" id="game">
+
+            </div>
+            <div class="statShop">
+                <div class="statInfo">
+                    <p>Corn: </p>
+                    <p id="currency">500</p>
+                    <p>Seeds: </p>
+                    <p id="seeds">7</p>
+                </div>
+                <div>
+                    <p>BUY SEEDS</p>
+                    <button id="btnShopSeeds" onclick="seedShop()">YOU BUY SEEDS</button>
+                    <p>BUY MY STUFF</p>
+                    <button id="btnShop2" onclick="shopIDK()">YOU BUY</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>@ATDoesStuff 2021 </p>
+    </footer>
+    <script src="scripts/coreGame.js"></script>
+
+</body>
+</html>
