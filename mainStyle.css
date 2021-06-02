@@ -15,7 +15,8 @@
     font-size: 62.5%;
 }body{
     font-size: 16px;
-    height: 80%;
+    height: 100%;
+    min-height: 100%;
     margin-bottom: 0;
     background-color: var(--tempbackground);
     font-family: dogicaPixel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -48,12 +49,17 @@ header{
 
 /* GENERAL ATRIBUTES */
 main{
-    margin:57px 52px 0;
+    margin:57px auto 0;
     background-color: var(--backgroundMain);
+    width: 90%;
+    padding: 10px;
+    
 }footer{
     background-color: var(--backgroundHead);
     margin: 0;
     padding: 2rem 3rem;
+
+    height: max-content;
 }footer p{
     font-size: 1rem;
     margin: 0;
@@ -61,28 +67,29 @@ main{
 .farm{
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr 2fr 1.75fr;
+    grid-template-columns: 1.5fr 2fr 1fr;
 }
 
 /* LOG */
 .consoleLog{
     margin: 1.5rem;
     margin-left: 3rem;
-    width: 250px;
+    
 }#log{
     background-color: var(--bgLog);
     height: 450px;
+    width: 100%;
     margin-bottom: 1rem;
     overflow-y: scroll;
     overflow-wrap: break-word;
 }#logUserInput{
-    width: 80%;
+    width: 86%;
 }#logTrigger{
     padding: 2px 1rem;
     border: 1px solid black;
 }.logEntry{
     padding: 0 0 0 1rem;   
-    font-size: 12px;
+    font-size: 75%;
 }.commandText{ color:darkred; }
 
 /* GRID FARM */
@@ -116,5 +123,14 @@ main{
 .statShop{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    width: 100%;
+    width: 80%;
+    padding: 2vmin;
+    text-align: center;
+
+    background-color: var(--bgLog);
+}
+
+.statCurrency{
+    padding: 1rem   ;
+    background-color: var(--backgroundMain);
 }
